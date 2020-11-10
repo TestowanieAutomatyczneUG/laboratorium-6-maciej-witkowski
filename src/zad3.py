@@ -1,5 +1,4 @@
 import math
-import json
 
 
 def statement(invoice, plays):
@@ -38,12 +37,3 @@ def statement(invoice, plays):
     result += f'Amount owed is {format_as_dollars(total_amount/100)}\n'
     result += f'You earned {volume_credits} credits\n'
     return result
-
-
-# with open('json/invoice.json', 'r') as f:
-#     invoice_data = json.load(f)
-#
-# with open('json/plays.json', 'r') as f:
-#     plays_data = json.load(f)
-#
-# print(statement(invoice_data, plays_data))
