@@ -6,7 +6,7 @@ class Password:
         special_characters = set(string.punctuation.replace("_", ""))
 
         if not isinstance(password, str):
-            raise TypeError("Password is not of type string")
+            raise TypeError("Password is not of type string!")
 
         if len(password) >= 8:
             if any(x.isupper() for x in password) and any(x.isdigit() for x in password) and any(
